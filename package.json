@@ -1,13 +1,13 @@
 {
-  "name": "kickstart",
-  "version": "1.0.1",
+  "name": "qikstart",
+  "version": "1.0.0",
   "description": "CLI tool to kick-start a GitHub repository (LICENSE,CODE-OF-CONDUCT,README,ISSUE-TEMPLATE nad many more..)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "kickstart": "./index.js"
+    "qikstart": "./index.js"
   },
   "repository": {
     "type": "git",
