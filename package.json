@@ -1,6 +1,6 @@
 {
   "name": "qikstart",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI tool to kick-start a GitHub repository (LICENSE,CODE-OF-CONDUCT,README,ISSUE-TEMPLATE nad many more..)",
   "main": "index.js",
   "scripts": {
@@ -26,14 +26,23 @@
     "OSS",
     "spdx",
     "README",
-    "readme"
+    "readme",
+    "issue",
+    "template",
+    "boilerplate",
+    "badges",
+    "shieldsio",
+    "badgen",
+    "countributing",
+    "pull-request",
+    "initialize"
   ],
   "author": "Dipankar Pal",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/deep5050/kickstart/issues"
+    "url": "https://github.com/deep5050/qikstart/issues"
   },
-  "homepage": "https://github.com/deep5050/kickstart#readme",
+  "homepage": "https://github.com/deep5050/qikstart#readme",
   "dependencies": {
     "chalk": "^4.0.0",
     "conf": "^6.2.4",
