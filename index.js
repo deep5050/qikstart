@@ -1,3 +1,6 @@
+#!/usr/bin/env node
+'use strict'
+
 const license = require('./src/license');
 const readme = require('./src/readme');
 const coc = require('./src/coc');
