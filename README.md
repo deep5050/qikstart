@@ -1,9 +1,9 @@
 <div align=center>
 
 
-# KICK-START
+# QIKSTART
 
-<a href="https://github.com/deep5050/kickstart"><img src="https://i.imgur.com/4ZZfrBM.png" title="kickstart" /></a>
+<a href="https://github.com/deep5050/qikstart"><img src="https://i.imgur.com/4ZZfrBM.png" title="qikstart" /></a>
 <p> INTERACTIVE . SIMPLE . EFFICIENT </p>
 
 ### A Simple CLI To Kick-Start Your GitHub Repository With A Few Keystrokes
@@ -21,16 +21,16 @@
 
 
 ## Getting Started
-Type `kickstart` On Your Terminal Or Command Prompt To launch This Tool :zap:
+Type `qikstart` On Your Terminal Or Command Prompt To launch This Tool :zap:
 
-<a href="https://github.com/deep5050/kickstart"><img src="https://i.imgur.com/uuMtxwT.png" title="kickstart" /></a>
+<a href="https://github.com/deep5050/qikstart"><img src="https://i.imgur.com/uuMtxwT.png" title="qikstart" /></a>
 
 ### Prerequisites
 In Order To Use This Tool, NodeJs must be installed on your machine.
 
 
 ### Installing
-Run `npm install -g kickstart` And You Are GOOD TO GO :cool:
+Run `npm install -g qikstart` And You Are GOOD TO GO :cool:
 
 
 ## Maintainer
