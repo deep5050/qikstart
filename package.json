@@ -1,0 +1,41 @@
+{
+  "name": "kickstart",
+  "version": "1.0.0",
+  "description": "CLI tool to kick-start a GitHub repository (LICENSE,CODE-OF-CONDUCT,README,ISSUE-TEMPLATE nad many more..)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deep5050/kickstart.git"
+  },
+  "files": ["index.js","src/"],
+  "keywords": [
+    "code-of-conduct",
+    "repo",
+    "doc",
+    "law",
+    "license",
+    "github",
+    "git",
+    "coc",
+    "OSS",
+    "spdx",
+    "README",
+    "readme"
+  ],
+  "author": "Dipankar Pal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deep5050/kickstart/issues"
+  },
+  "homepage": "https://github.com/deep5050/kickstart#readme",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "conf": "^6.2.4",
+    "log-symbols": "^4.0.0",
+    "nonsense-license": "^1.0.2",
+    "qoa": "^0.2.0"
+  }
+}
