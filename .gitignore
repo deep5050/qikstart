@@ -1,2 +1,7 @@
 autobadge-kickstart-for-the-badge.md
 node_modules/
+package-lock.json
+.vscode
+github-repository-template-master
+test.js
+kickstart-for-the-badge.md
