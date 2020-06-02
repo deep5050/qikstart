@@ -10,7 +10,7 @@
 </div>
 
 ## Includes
-- [x] All The popular LICENS
+- [x] All The popular LICENSE
 - [x] README Template
 - [X] CODE_OF_CONDUCT
 - [x] ISSUE_TEMPLATE
@@ -47,8 +47,3 @@ See the [LICENSE](LICENSE) file for more details.
 1. [qikQR](github.com/deep5050/qikQR) Minimal Cross-Platform QR Code Reader Desktop App Made With ElectonJs
 2. [autobadge](github.com/deep5050/autobadge) Automated Github Repository Badges
 3. [autopylot](github.com/deep5050/autopy-lot) A GitHub Action To Perform Jupyter Notebook To Python Conversion.
-
-
-
-
-
