@@ -1,6 +1,6 @@
 {
   "name": "qikstart",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "CLI tool to kick-start a GitHub repository (LICENSE,CODE-OF-CONDUCT,README,ISSUE-TEMPLATE and many more..)",
   "main": "index.js",
   "scripts": {
