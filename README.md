@@ -1,12 +1,11 @@
 <div align=center>
 
-
-# QIKSTART
+<p align="center" ><a href="https://github.com/deep5050/qikstart"><img src="https://i.imgur.com/42yv9oM.png" title="QIKSTART" /></a></p>
 
 <a href="https://github.com/deep5050/qikstart"><img src="https://i.imgur.com/4ZZfrBM.png" title="qikstart" /></a>
-<p> INTERACTIVE . SIMPLE . EFFICIENT </p>
+<p align="center" > INTERACTIVE . SIMPLE . EFFICIENT </p>
 
-### A Simple CLI To Kick-Start Your GitHub Repository With A Few Keystrokes
+<p align="center"><h2 align="center"> A Simple CLI To Kick-Start Your GitHub Repository With A Few Keystrokes</h2></p>
 </div>
 
 ## Includes
