@@ -6,12 +6,16 @@
 <p align="center" > INTERACTIVE . SIMPLE . EFFICIENT </p>
 
 <p align="center"><h2 align="center"> A Simple CLI To Kick-Start Your GitHub Repository With A Few Keystrokes</h2></p>
+
+<p align="center"><a href="https://github.com/deep5050/qikstart/actions?query=workflow%3Anpm-publish"><img src="https://img.shields.io/github/workflow/status/deep5050/qikstart/npm-publish?label=npm-publish&logo=github&style=for-the-badge"></a></p>
+
+<p align="center"><a href="https://www.npmjs.com/package/qikstart"><img alt="npm" src="https://img.shields.io/npm/dt/qikstart?color=red&label=INSTALL&logo=npm&style=for-the-badge"></a></p>
 </div>
 
 ## Includes
 - [x] All The popular LICENSE
 - [x] README Template
-- [X] CODE_OF_CONDUCT
+- [X] CODE_OF_CONDUCT (In 28 languages)
 - [x] ISSUE_TEMPLATE
 - [x] PULL_REQUEST_TEMPLATE
 - [X] CONTRIBUTING
