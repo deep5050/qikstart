@@ -1,4 +1,4 @@
-module.exports.all_langs = () => {
+module.exports.all_langs = ()=> {
   return {
 
     "aa": "Afar",
@@ -225,7 +225,7 @@ module.exports.all_langs = () => {
 
 
 
-module.exports.supported_langs = () => {
+module.exports.supported_langs = ()=> {
   return ['bn', 'bs', 'de', 'el', 'en', 'es', 'fa_ir', 'fr', 'hi', 'id', 'is', 'iw', 'ja', 'kn', 'ko', 'mk', 'nl', 'pl', 'pt_br', 'pt', 'ro', 'ru', 'sl', 'sv', 'tr', 'uk', 'zh_cn', 'zh_tw'];
 }
 
@@ -257,11 +257,11 @@ module.exports.get_lang = (code) => {
   return to_return;
 }
 
-module.exports.get_coc = (id) => {
-  return this[id]();
+module.exports.get_coc = (id,email) => {
+  return this[id](email);
 }
 
-module.exports.bn = () => {
+module.exports.bn = (email)=> {
   return `# কনট্রিবিউটরদের আচরনবিধি
 
 ## আমাদের অঙ্গীকার
@@ -315,7 +315,7 @@ module.exports.bn = () => {
 
 ## প্রয়োগ
 
-অপমানজনক, হয়রানী বা গ্রহণযোগ্য নয় এমন আচরণের খবর প্রজেক্ট টীমকে জানানো যাবে [এই ই-মেল এ]। 
+অপমানজনক, হয়রানী বা গ্রহণযোগ্য নয় এমন আচরণের খবর প্রজেক্ট টীমকে জানানো যাবে ${email}। 
 সব অভিযোগ পর্যালোচনা করা ও তদন্ত করা হবে এবং এই পরিস্থিতিতে যে প্রতিক্রিয়া প্রয়োজনীয় ও উপযুক্ত 
 বলে মনে করা হবে তা প্রয়োগ করা হবে। প্রজেক্ট টীম এই ঘটনার রিপোর্টার সম্পর্কে গোপনীয়তা বজায় রাখতে বাধ্য। 
 নির্দিষ্ট প্রয়োগ নীতিগুলি আরও বিস্তারিতভাবে আলাদা করে পোস্ট করা যেতে পারে।
@@ -335,7 +335,7 @@ module.exports.bn = () => {
 
 
 
-module.exports.bs = () => {
+module.exports.bs = (email)=> {
   return `# Pakt Saradnika: Kodeks Ponašanja
 
 ## Naš zalog
@@ -372,7 +372,7 @@ Ovaj kodeks ponašanja se odnosi na sve projekte i javne prostore gdje pojedinac
 
 ## Primjenjivanje
 
-U slučaju uvredljivog ponašanja, kontaktirajte održavatelje: [E-MAIL ADRESA]
+U slučaju uvredljivog ponašanja, kontaktirajte održavatelje: ${email}
 
 Svaka žalba će se istraziti i odgovor će biti fer i prikladan za situaciju. Održavatelji projekta su odgovorni održati povjerljivost svake žalbe. Dodatne detalje polisa mogu biti objavljeno odvojeno.
 
@@ -384,7 +384,7 @@ Ovaj kodeks ponašanja je preuzet iz [Contributor Covenant](https://www.contribu
 `;
 }
 
-module.exports.de = () => {
+module.exports.de = (email)=> {
   return `# Vereinbarung über Verhaltenskodex für Mitwirkende
 
 ## Unsere Verpflichtung
@@ -421,7 +421,7 @@ Dieser Verhaltenskodex gilt sowohl innerhalb des Projektbereichs als auch in öf
 
 ## Umsetzung
 
-Fälle von missbräuchlichem, belästigendem oder anderweitig nicht akzeptablem Verhalten können dem Projektteam unter [EMAIL ADRESSE EINFÜGEN] gemeldet werden. Alle Beschwerden werden geprüft und untersucht und werden zu einer Antwort führen, die angesichts der Umstände für notwendig und angemessen gehalten wird. Das Projektteam ist verpflichtet, über diejenigen, die Vorfälle gemeldet haben, Verschwiegenheit zu wahren. Weitere Einzelheiten zu speziellen Umsetzungsgrundsätzen können gesondert mitgeteilt werden.
+Fälle von missbräuchlichem, belästigendem oder anderweitig nicht akzeptablem Verhalten können dem Projektteam unter ${email} gemeldet werden. Alle Beschwerden werden geprüft und untersucht und werden zu einer Antwort führen, die angesichts der Umstände für notwendig und angemessen gehalten wird. Das Projektteam ist verpflichtet, über diejenigen, die Vorfälle gemeldet haben, Verschwiegenheit zu wahren. Weitere Einzelheiten zu speziellen Umsetzungsgrundsätzen können gesondert mitgeteilt werden.
 
 Projektverantwortliche, welche den Verhaltenskodex nicht befolgen, oder nicht nach bestem Wissen und Glauben für dessen Einhaltung sorgen, können sich vorübergehenden oder dauerhaften Auswirkungen gegenübersehen, die durch andere Mitglieder der Projektleitung bestimmt wurden.
 
@@ -431,7 +431,7 @@ Dieser Verhaltenskodex basiert auf dem Contributor Covenant, Version 1.4, verfü
 `;
 }
 
-module.exports.el = () => {
+module.exports.el = (email)=> {
   return `# Κώδικας δεοντολογίας «Contributor Covenant»
 
 ## Η υπόσχεσή μας
@@ -490,7 +490,7 @@ module.exports.el = () => {
 
 Περιστατικά παρενόχλησης και καταχρηστικής ή ευρέως ανεπίτρεπτης συμπεριφοράς
 μπορούν να αναφερθούν στην ομάδα του _project_ στην ακόλουθη διεύθυνση:
-[INSERT EMAIL ADDRESS].  Όλα τα παράπονα θα εξετάζονται και θα αντιμετωπίζονται
+${email}.  Όλα τα παράπονα θα εξετάζονται και θα αντιμετωπίζονται
 κατάλληλα και ανάλογα με τις περιστάσεις.  Η ομάδα του _project_ έχει υποχρέωση
 να διαφυλάξει την εμπιστευτικότητα στοιχείων που αφορούν τον καταγγελέα.
 Περαιτέρω λεπτομέρειες σχετικά με τους κανόνες επιβολής δύναται να δημοσιευτούν
@@ -511,7 +511,7 @@ module.exports.el = () => {
 
 
 
-module.exports.en = () => {
+module.exports.en = (email)=> {
   return `# Contributor Covenant Code of Conduct
 
 ## Our Pledge
@@ -569,7 +569,7 @@ further defined and clarified by project maintainers.
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the project team at [INSERT EMAIL ADDRESS]. All
+reported by contacting the project team at ${email}. All
 complaints will be reviewed and investigated and will result in a response that
 is deemed necessary and appropriate to the circumstances. The project team is
 obligated to maintain confidentiality with regard to the reporter of an incident.
@@ -590,7 +590,7 @@ available at [https://contributor-covenant.org/version/1/4][version]
 }
 
 
-module.exports.es = () => {
+module.exports.es = (email)=> {
   return `# Código de Conducta convenido para Contribuyentes
 
 ## Nuestro compromiso
@@ -627,7 +627,7 @@ Este código de conducta aplica tanto a espacios del proyecto como a espacios p�
   
 ## Aplicación
 
-Ejemplos de abuso, acoso u otro tipo de comportamiento inaceptable puede ser reportado al equipo del proyecto en [INSERTE CORREO AQUÍ]. Todas las quejas serán revisadas e investigadas, generando un resultado apropiado a las circunstancias. El equipo del proyecto está obligado a mantener confidencialidad de la persona que reportó el incidente. Detalles específicos acerca de las políticas de aplicación pueden ser publicadas por separado.
+Ejemplos de abuso, acoso u otro tipo de comportamiento inaceptable puede ser reportado al equipo del proyecto en ${email}. Todas las quejas serán revisadas e investigadas, generando un resultado apropiado a las circunstancias. El equipo del proyecto está obligado a mantener confidencialidad de la persona que reportó el incidente. Detalles específicos acerca de las políticas de aplicación pueden ser publicadas por separado.
 
 Administradores que no sigan o que no hagan cumplir este Código de Conducta pueden ser eliminados de forma temporal o permanente del equipo administrador. 
 
@@ -639,7 +639,7 @@ Este Código de Conducta es una adaptación del [Contributor Covenant][homepage]
 `;
 }
 
-module.exports.fa_ir = () => {
+module.exports.fa_ir = (email)=> {
   return `# پیمان نهوه ی برخورد با مشارکت کننده
 
 ## تعهد ما
@@ -687,7 +687,7 @@ module.exports.fa_ir = () => {
 ## اجرا کردن
 
 هرگونه برخورد سوءاستفاده گرایانه، آزاردهنده، یا به هرشکل غیرقابل قبول می بایست به تیم پروژه از طریق
-[آدرس ایمیل را وارد کنید] اطلاع داده شود. تمایمی شکایات بررسی و پیگیری خواهند شد و پاسخ مناسبی
+${email} اطلاع داده شود. تمایمی شکایات بررسی و پیگیری خواهند شد و پاسخ مناسبی
 با توجه به شرایط داده خواهد شد. تیم پروژه موظف است محرمانگی اطلاعات گزارش دهنده ی رخداد را حفظ کند.
 توضیحات در مورد سیاست های خاص دیگر  هم می تواند به طور جداگانه اضافه شود.
 
@@ -703,7 +703,7 @@ https://www.contributor-covenant.org/version/1/4/code-of-conduct.html در دس�
 `;
 }
 
-module.exports.fr = () => {
+module.exports.fr = (email)=> {
   return `# Charte Code de Conduite Contributeurs
 
 ## Notre engagement
@@ -765,7 +765,7 @@ projet.
 
 Les cas de comportements abusifs, harcelants ou tout autre comportement
 inacceptable peuvent être signalés en contactant l'équipe du projet à
-[INSERER ADRESSE EMAIL]. Toutes les plaintes seront examinées et étudiées
+${email}. Toutes les plaintes seront examinées et étudiées
 et se traduiront par une réponse appropriée aux
 circonstances. L'équipe du projet s'engage à garder confidentielles les
 informations de la personne qui remonte un incident. Plus de détails sur
@@ -783,7 +783,7 @@ version 1.4.0, disponible à
 `;
 }
 
-module.exports.hi = () => {
+module.exports.hi = (email)=> {
   return `# योगदानकर्ता नियमों की आचार संहिता
 
 ## हमारी प्रतिज्ञा
@@ -820,7 +820,7 @@ module.exports.hi = () => {
 
 ## प्रवर्तन
 
-अपमानजनक, उत्पीड़नीय अथवा अन्य अस्वीकारीय व्यवहार के बारे में परियोजना दल को \[ यहाँ ईमेल पता लिखें \] पर सूचित किया जा सकता है। सभी शिकायतों की समीक्षा और जाँच होगी और परिस्थिति अनुरूप उचित व आवश्यक प्रतिक्रिया होगी। परियोजना दल घटना के सूचक के सम्बन्ध में गोपनीयता बनाए रखने के लिए बाध्य है। विशिष्ट प्रवर्तन नीतियों के आगे की जानकारी अलग से दी जा सकती है।
+अपमानजनक, उत्पीड़नीय अथवा अन्य अस्वीकारीय व्यवहार के बारे में परियोजना दल को ${email} पर सूचित किया जा सकता है। सभी शिकायतों की समीक्षा और जाँच होगी और परिस्थिति अनुरूप उचित व आवश्यक प्रतिक्रिया होगी। परियोजना दल घटना के सूचक के सम्बन्ध में गोपनीयता बनाए रखने के लिए बाध्य है। विशिष्ट प्रवर्तन नीतियों के आगे की जानकारी अलग से दी जा सकती है।
 
 परियोजना अनुरक्षक, जो आचार संहिता का पालन नहीं करते या सद्भाव से उसे लागू नहीं करते, स्थायी या अस्थायी नतीजों का सामना कर सकते हैं जिसका निर्णय परियोजना का नेतृत्व करने वाले अन्य सदस्य करेंगें।
 
@@ -832,7 +832,7 @@ module.exports.hi = () => {
 `;
 }
 
-module.exports.id = () => {
+module.exports.id = (email)=> {
   return `# Kode Etik Contributor Covenant
 
 ## Ikrar Kami
@@ -878,7 +878,7 @@ mewakili sebuah proyek atau komunitas termasuk dalam menggunakan alamat email re
 ## Penegakan
 
 Kejadian perilaku kasar, pelecehan, atau tidak dapat diterima yang terjadi
-dapat dilaporkan kepada tim inti proyek di [INSERT EMAIL ADDRESS]. Semua keluhan
+dapat dilaporkan kepada tim inti proyek di ${email}. Semua keluhan
 akan ditinjau, diselidiki dan akan menghasilkan tanggapan yang dianggap perlu
 dan sesuai dengan keadaan. Tim inti proyek berkewajiban menjaga kerahasiaan pelapor yang berkenaan dengan pelaporan suatu insiden. Rincian lebih lanjut tentang kebijakan penegakan khusus akan dipublikasikan secara terpisah.
 
@@ -896,7 +896,7 @@ tersedia di [https://www.contributor-covenant.org/version/1/4/code-of-conduct.ht
 `;
 }
 
-module.exports.is = () => {
+module.exports.is = (email)=> {
   return `# Hátternisreglur þátttakenda
 
 ## Loforð okkar
@@ -953,7 +953,7 @@ verið frekar skilgreint og skýrt af umsjónarfólki verkefnis.
 ## Fullnusta
 
 Tilvik af ofbeldisfullri, áreitni, eða annarskonar óviðunandi hegðunnar geta
-verið tilkynntar með því að hafa samband við verkefnateymi í [NETFANG HÉR].
+verið tilkynntar með því að hafa samband við verkefnateymi í ${email}.
 Allar kvartanir verða yfirfarnar og rannskaðar og munu leiða til viðbragða sem
 eru talin nauðsynleg og viðeigandi fyrir aðstæður. Verkefnateymi er skylt til að
 halda trúnað við þann sem tilkynnir atvik. Frekari upplýsingar
@@ -973,7 +973,7 @@ https://www.contributor-covenant.org/version/1/4/code-of-conduct/
 `;
 }
 
-module.exports.iw = () => {
+module.exports.iw = (email)=> {
   return `# קוד התנהגות לתורם
 
 ## ההתחייבות שלנו
@@ -1021,7 +1021,7 @@ module.exports.iw = () => {
 ## אכיפה
 
 ניתן לדווח על תופעות של התנהגות מעליבה, מטרידה, או בלתי הולמת על ידי יצירת קשר
-עם הקבוצה של הפרויקט ב [הכנס כתובת אימייל]. כלל התלונות יבחנו ויחקרו ויענו על ידי 
+עם הקבוצה של הפרויקט ב ${email}. כלל התלונות יבחנו ויחקרו ויענו על ידי 
 תגובה שצוות הפרויקט רואה כמתאימה והכרחית לנסיבות. צוות הפרויקט מחויב לשמור על חשאיות
 בנוגע למדווח של התקרית. פרטים נוספים של מדינויות אכיפה ספציפיות ידווחו בנפרד.
 
@@ -1037,7 +1037,7 @@ module.exports.iw = () => {
 `;
 }
 
-module.exports.ja = () => {
+module.exports.ja = (email)=> {
   return `# コントリビューター行動規範
 
 ## 私たちの約束
@@ -1091,7 +1091,7 @@ module.exports.ja = () => {
 ## 執行
 
 暴言、嫌がらせ、またはそれ以外の受け入れられない行動は、
-[INSERT EMAIL ADDRESS] に連絡して、
+${email} に連絡して、
 プロジェクトチームに報告される可能性があります。すべての苦情は、
 レビュー、調査され、必要かつ適切と判断された対応がとられます。
 プロジェクトチームは、事象の報告者に関する守秘義務があります。
@@ -1111,7 +1111,7 @@ https://www.contributor-covenant.org/version/1/4/code-of-conduct.html にある
 `;
 }
 
-module.exports.kn = () => {
+module.exports.kn = (email)=> {
   return `# ಕೊಡುಗೆದಾರರ ಒಪ್ಪಂದದ ನೀತಿ
 
 ## ನಮ್ಮ ಪ್ರತಿಜ್ಞೆ
@@ -1149,7 +1149,7 @@ module.exports.kn = () => {
 
 ## ಜಾರಿಗೊಳಿಸುವಿಕೆ
 
-ನಿಂದನೀಯ, ಕಿರುಕುಳ, ಅಥವಾ ಸ್ವೀಕರಿಸಲಾಗದ ನಡವಳಿಕೆಯ ಸಂದರ್ಭಗಳು ಅಸ್ಥಿತ್ವಕ್ಕೆ ಬಂದೊಡನೆ ಯೋಜನಾ ತಂಡವನ್ನು [INSERT EMAIL ADDRESS] ನಲ್ಲಿ ಸಂಪರ್ಕಿಸುವ ಮೂಲಕ ವರದಿ ಮಾಡಿ. ಎಲ್ಲಾ ದೂರುಗಳನ್ನು ಪರಿಶೀಲಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ತನಿಖೆ ಮಾಡಲಾಗುತ್ತದೆ ಮತ್ತು ಇದು ಪರಿಸ್ಥಿತಿಯ ಅನುಗುಣವಾಗಿ ಒಂದು ಅಗತ್ಯ ಮತ್ತು ಸೂಕ್ತ ಪ್ರತಿಕ್ರಿಯೆಗೆ ಕಾರಣವಾಗುತ್ತದೆ. ಯೋಜನೆಯ ತಂಡ ಆ ಘಟನೆಯ ವರದಿಗಾರನಿಗೆ ಸಂಬಂಧಿಸಿದಂತೆ ಗೌಪ್ಯತೆಯನ್ನು ಕಾಪಾಡುವುದು  ಕಡ್ಡಾಯ. ನಿರ್ದಿಷ್ಟ ಜಾರಿ ನೀತಿಗಳ ಹೆಚ್ಚಿನ ವಿವರಗಳನ್ನು ಪ್ರತ್ಯೇಕವಾಗಿ ಪೋಸ್ಟ್ ಮಾಡ ತಕ್ಕದ್ದು.
+ನಿಂದನೀಯ, ಕಿರುಕುಳ, ಅಥವಾ ಸ್ವೀಕರಿಸಲಾಗದ ನಡವಳಿಕೆಯ ಸಂದರ್ಭಗಳು ಅಸ್ಥಿತ್ವಕ್ಕೆ ಬಂದೊಡನೆ ಯೋಜನಾ ತಂಡವನ್ನು ${email} ನಲ್ಲಿ ಸಂಪರ್ಕಿಸುವ ಮೂಲಕ ವರದಿ ಮಾಡಿ. ಎಲ್ಲಾ ದೂರುಗಳನ್ನು ಪರಿಶೀಲಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ತನಿಖೆ ಮಾಡಲಾಗುತ್ತದೆ ಮತ್ತು ಇದು ಪರಿಸ್ಥಿತಿಯ ಅನುಗುಣವಾಗಿ ಒಂದು ಅಗತ್ಯ ಮತ್ತು ಸೂಕ್ತ ಪ್ರತಿಕ್ರಿಯೆಗೆ ಕಾರಣವಾಗುತ್ತದೆ. ಯೋಜನೆಯ ತಂಡ ಆ ಘಟನೆಯ ವರದಿಗಾರನಿಗೆ ಸಂಬಂಧಿಸಿದಂತೆ ಗೌಪ್ಯತೆಯನ್ನು ಕಾಪಾಡುವುದು  ಕಡ್ಡಾಯ. ನಿರ್ದಿಷ್ಟ ಜಾರಿ ನೀತಿಗಳ ಹೆಚ್ಚಿನ ವಿವರಗಳನ್ನು ಪ್ರತ್ಯೇಕವಾಗಿ ಪೋಸ್ಟ್ ಮಾಡ ತಕ್ಕದ್ದು.
 
 ನೀತಿ ಸಂಹಿತೆಯನ್ನು ಅನುಸರಿಸದ ಅಥವಾ ಕಾರ್ಯಗತಗೊಳಿಸದ ಯೋಜನಾ ಪಾಲಕರನ್ನು
 ಇತರ ಯೋಜನೆಯ ನಾಯಕತ್ವದ ಸದಸ್ಯರ ನಿರ್ಣಯಿಸಲ್ಪಟ್ಟಂತೆ ತಾತ್ಕಾಲಿಕ ಅಥವಾ ಶಾಶ್ವತವಾಗಿ ನಿಷೇದಿಸಲಾಗುವುದು.
@@ -1162,7 +1162,7 @@ module.exports.kn = () => {
 `;
 }
 
-module.exports.ko = () => {
+module.exports.ko = (email)=> {
   return `# 기여자 행동 강령 규약
 
 ## 서약
@@ -1209,7 +1209,7 @@ module.exports.ko = () => {
 
 ## 강제
 
-모욕적인, 괴롭힘 또는 기타 하지말아야 할 행동을 발견하면 [EMAIL 주소 입력] 을
+모욕적인, 괴롭힘 또는 기타 하지말아야 할 행동을 발견하면 ${email} 을
 통해 프로젝트 팀에 보고 해 주세요. 모든 불만사항은 검토하고 조사한 뒤 상황에
 따라 필요하고 적절하다고 생각되는 응답을 할 것 입니다. 프로젝트 팀은 사건의
 보고자와 관련한 비밀을 유지할 의무가 있습니다. 구체적인 시행 정책의 자세한
@@ -1228,7 +1228,7 @@ https://www.contributor-covenant.org/ko/version/1/4/code-of-conduct.html 에서
 `;
 }
 
-module.exports.mk = () => {
+module.exports.mk = (email)=> {
   return `# Договор за Соработник - Kодекс на Oднесување
 
 ## Нашиот завет
@@ -1265,7 +1265,7 @@ module.exports.mk = () => {
 
 ## Применување
 
-Злоупотребувачко, вознемирувачко, или друг начин на неприфатливо однесување може да биде пријавено со контактирање на проектниот тим на [ВНЕСИ АДРЕСА ЗА Е-ПОШТА]. Сите жалби ќе бидат прегледани и истражени од страна на проектниот тим, кој ќе одговори соодветно на ситуацијата. Одржувачите на проектот се одговорни за одржување доверливост на секоја жалба. Дополнителни детали за специфични полиси за извршување може да бидат објавени одделно.
+Злоупотребувачко, вознемирувачко, или друг начин на неприфатливо однесување може да биде пријавено со контактирање на проектниот тим на ${email}. Сите жалби ќе бидат прегледани и истражени од страна на проектниот тим, кој ќе одговори соодветно на ситуацијата. Одржувачите на проектот се одговорни за одржување доверливост на секоја жалба. Дополнителни детали за специфични полиси за извршување може да бидат објавени одделно.
 
 Одржувачите на проектот кои не го следат или применуваат овој кодекс може да се соочат со привремени или трајни последици, дефинирани од страна на останатите членови на проектното водство.
 
@@ -1278,7 +1278,7 @@ module.exports.mk = () => {
 `;
 }
 
-module.exports.nl = () => {
+module.exports.nl = (email)=> {
   return `# Gedragscode voor Bijdragers
 
 ## Onze belofte
@@ -1335,7 +1335,7 @@ van een project mag verder worden gedefinieerd door de projectonderhouders.
 ## Handhaving
 
 Instanties van beledigend, storend of anders niet aanvaardbaar gedrag mag worden
-gerapporteerd aan het project team op [VUL EMAIL ADRES IN]. Alle klachten zullen
+gerapporteerd aan het project team op ${email}. Alle klachten zullen
 besproken en onderzocht worden en zullen resulteren in een antwoord dat nodig en
 passend wordt geacht al naargelang de situatie. Het project team is verplicht om
 vertrouwelijkheid te garanderen met betrekking tot de klager. Verdere details van
@@ -1354,7 +1354,7 @@ versie 1.4, beschikbaar op https://www.contributor-covenant.org/nl/version/1/4/c
 `;
 }
 
-module.exports.pl = () => {
+module.exports.pl = (email)=> {
   return `# Przymierze Współpracy — Kodeks Postępowania
 
 ## Nasza Przysięga
@@ -1414,7 +1414,7 @@ bardziej szczegółowy sposób przez opiekunów projektu.
 ## Egzekwowanie
 
 Przypadki nękania, gróźb oraz innych form nieakceptowalnego zachowania mogą
-być zgłaszane do zespołu projektu pod adresem [TU WSTAW ADRES EMAIL]. Wszystkie
+być zgłaszane do zespołu projektu pod adresem ${email}. Wszystkie
 skargi zostaną odpowiednio rozpatrzone oraz podjęte zostaną działania uznane za
 konieczne i odpowiednie do sytuacji. Zespół projektu ma obowiązek zachowania tożsamości
 osoby zgłaszającej incydent w tajemnicy. Bardziej szczegółowe zasady egzekwowania Kodeksu
@@ -1435,7 +1435,7 @@ wersji 1.4, dostępnej pod adresem https://www.contributor-covenant.org/version/
 `;
 }
 
-module.exports.pt_br = () => {
+module.exports.pt_br = (email)=> {
   return `# Código de Conduta para Colaboradores
 
 ## Nossa promessa
@@ -1492,8 +1492,7 @@ esclarecida pelos administradores do projeto.
 ## Aplicação
 
 Comportamento abusivo, de assédio ou de outros tipos pode ser
-comunicado contatando a equipe do projeto [INSIRA O ENDEREÇO
-DE EMAIL]. Todas as queixas serão revistas e investigadas e
+comunicado contatando a equipe do projeto ${email}. Todas as queixas serão revistas e investigadas e
 resultarão numa resposta necessária e apropriada à situação.
 A equipe é obrigada a manter a confidencialidade em relação
 ao elemento que reportou o incidente. Demais detalhes de
@@ -1509,7 +1508,7 @@ Este Código de Conduta é adaptado do [Contributor Covenant](https://www.contri
 versão 1.4, disponível em https://www.contributor-covenant.org/pt-br/version/1/4/code-of-conduct.html`;
 }
 
-module.exports.pt = () => {
+module.exports.pt = (email)=> {
   return `# Pacto de Código de Conduta para Colaboradores
 
 ## O nosso comprometimento
@@ -1570,8 +1569,7 @@ e esclarecida pelos administradores do projeto.
 ## Cumprimento
 
 Comportamento abusivo, de assédio ou de outros tipos pode ser
-comunicados contactando a equipa do projeto [INSIRA O ENDEREÇO
-DE EMAIL]. Todas as queixas serão revistas e investigadas e
+comunicados contactando a equipa do projeto ${email}. Todas as queixas serão revistas e investigadas e
 resultarão numa resposta necessária e apropriada à situação.
 A equipa do projeto é obrigada a manter a confidencialidade em relação
 ao elemento que reportou o incidente. Futuros detalhes sobre políticas
@@ -1588,7 +1586,7 @@ Este Código de Conduta é adaptado do [Contributor Covenant](https://www.contri
 versão 1.4, disponível em https://www.contributor-covenant.org/pt/version/1/4/code-of-conduct.html`;
 }
 
-module.exports.ro = () => {
+module.exports.ro = (email)=> {
   return `# Codul de Conduită al Contribuitorului
 
 ## Angajamentul nostru 
@@ -1643,7 +1641,7 @@ unui proiect poate fi clarificată în detaliu de către întreținătorii proie
 ## Condiții de aplicare
 
 Acțiunile abuzive, hărțuitoare sau considerate neadecvate pot fi raportate prin
-contactarea echipei proiectului la adresa [INSERAȚI ADRESA DE EMAIL]. Toate plângerile
+contactarea echipei proiectului la adresa ${email}. Toate plângerile
 vor fi analizate și investigate și vor rezulta într-un răspuns care este necesar și
 adecvat circumstanțelor. Echipa proiectului este obligată la păstrarea confidentialității
 persoanei care raportează un incident. Mai multe criterii și condiții de aplicare pot fi
@@ -1662,7 +1660,7 @@ Acest Cod de Conduită este adaptat conform [Codului de Conduită al Contribuito
 `;
 }
 
-module.exports.ru = () => {
+module.exports.ru = (email)=> {
   return `# Кодекс Поведения участника
 
 ## Обязательства
@@ -1698,7 +1696,7 @@ module.exports.ru = () => {
 
 ## Претензии
 
-О фактах нарушения или иных прецедентах неприемлемого поведения сообщайте команде проекта по электронной почте [ВСТАВЬТЕ АДРЕС ЭЛЕКТРОННОЙ ПОЧТЫ]. Команда проекта рассматривает и изучает жалобы, и реагирует соответствующим образом, целесообразным при данных обстоятельствах. Команда проекта обязуется сохранять конфиденциальность в отношении автора обращения. Подробная информация о политике претензий может быть размещена отдельно.
+О фактах нарушения или иных прецедентах неприемлемого поведения сообщайте команде проекта по электронной почте ${email}. Команда проекта рассматривает и изучает жалобы, и реагирует соответствующим образом, целесообразным при данных обстоятельствах. Команда проекта обязуется сохранять конфиденциальность в отношении автора обращения. Подробная информация о политике претензий может быть размещена отдельно.
 К участникам проекта, не руководствующимся или не соблюдающим Кодекс Поведения добровольно, могут быть применены временные или постоянные ограничения, определяемые руководителями проекта.
 
 ## Атрибуция
@@ -1709,7 +1707,7 @@ module.exports.ru = () => {
 `;
 }
 
-module.exports.sl = () => {
+module.exports.sl = (email)=> {
   return `# Kodeks obnašanja zveze sodelavcev
 
 ## Naša zaobljuba
@@ -1766,7 +1764,7 @@ dodatno opredeljena in razjasnjena s strani vzdrževalcev projekta.
 ## Uveljavljanje
 
 Primere zlorabe, nadlegovanja ali drugače nesprejemljivega vedenja se lahko
-sporoči projektni skupini preko [VNESITE NASLOV E-POŠTE]. Vse
+sporoči projektni skupini preko ${email}. Vse
 pritožbe bodo pregledane in raziskane, na osnovi česar bo izhajal odgovor, katerega
 se smatra kot potrebnega in ustreznega glede na okoliščine. Projektna ekipa je
 dolžna ohraniti zaupnost v zvezi s poročevalcem incidenta.
@@ -1785,7 +1783,7 @@ ki je na voljo na https://www.contributor-covenant.org/sl/version/1/4/code-of-co
 `;
 }
 
-module.exports.sv = () => {
+module.exports.sv = (email)=> {
   return `# Medarbetarförbundets Uppförandekod
 
 ## Vårt löfte
@@ -1844,7 +1842,7 @@ klargöras av projektansvariga.
 ## Upprätthållande
 
 Fall av kränkande, trakasserande eller på annat sätt oacceptabelt beteende kan
-rapporteras genom att kontakta projektgruppen på [INFOGA EPOSTADRESS]. Alla
+rapporteras genom att kontakta projektgruppen på ${email}. Alla
 klagomål kommer att granskas och undersökas och resultera i ett svar som anses
 nödvändig och lämplig under omständigheterna. Projektgruppen är skyldig att
 upprätthålla sekretess med avseende på rapportören av en incident. Ytterligare
@@ -1863,7 +1861,7 @@ version 1.4, tillgänglig på https://www.contributor-covenant.org/sv/version/1/
 `;
 }
 
-module.exports.tr = () => {
+module.exports.tr = (email)=> {
   return `# Katkıcı Ahdi Topluluk Sözleşmesi
 
 ## Teminatımız
@@ -1918,7 +1916,7 @@ temsilini proje yürütücüleri tanımlayabilir veya detaylandırabilir.
 ## İcra
 
 Kabul edilemeyecek herhangi bir davranış içeren bir olay yaşanması durumunda proje
-ekibiyle bu adresten [E-POSTA ADRESİNİ YAZIN] iletişim kurulabilir. Bu adrese iletilen
+ekibiyle bu adresten ${email} iletişim kurulabilir. Bu adrese iletilen
 bütün şikayetler dikkate alınacak, araştırılacak ve duruma uygun bir şekilde
 yanıtlanacaktır. Proje ekibi olayı haber veren kişinin kimliğini gizli tutmakla
 yükümlüdür. Sözleşmenin icrasına dair yönergeler ayrıca yayınlanabilir.
@@ -1935,7 +1933,7 @@ aslına bu adresten erişebilirsiniz https://www.contributor-covenant.org/tr/ver
 `;
 }
 
-module.exports.uk = () => {
+module.exports.uk = (email)=> {
   return `# Пакт про участь - Кодекс поведінки
 
 ## Наші зобовʼязання
@@ -1992,7 +1990,7 @@ module.exports.uk = () => {
 ## Правозастосування
 
 Про випадки образливого, або іншого неприпустимого поводження можна повідомити
-надіславши листа до команди проекта за адресою [АДРЕСА_Е-ПОШТИ]. Всі скарги
+надіславши листа до команди проекта за адресою ${email}. Всі скарги
 будуть розглянуті та перевірені, що призведе до реакції, що вважається
 необхідною і доцільною відповідно до обставин. Команда проекту зобовʼязується
 зберігати конфеденційність позивача. Інші деталі, щодо правозастосування можуть
@@ -2011,7 +2009,7 @@ module.exports.uk = () => {
 `;
 }
 
-module.exports.zh_cn = () => {
+module.exports.zh_cn = (email)=> {
   return `# 参与者公约
 
 ## 我们的保证
@@ -2052,7 +2050,7 @@ module.exports.zh_cn = () => {
 
 ## 强制执行
 
-可以通过[在此放入EMAIL]，来联系项目团队来举报滥用、骚扰或其他不被接受的行为。
+可以通过 ${email}，来联系项目团队来举报滥用、骚扰或其他不被接受的行为。
 
 任何维护团队认为有必要且适合的所有投诉都将进行审查及调查，并做出相对应的回应。项目小组有对事件回报者有保密的义务。具体执行的方针近一步细节可能会单独公布。
 
@@ -2067,7 +2065,7 @@ module.exports.zh_cn = () => {
 `;
 }
 
-module.exports.zh_tw = () => {
+module.exports.zh_tw = (email)=> {
   return `# 貢獻者公約
 
 ## 我們的承諾
@@ -2108,7 +2106,7 @@ module.exports.zh_tw = () => {
 
 ## 強制執行
 
-可以透過[在此放入EMAIL]，來聯繫專案團隊來報告濫用、騷擾或其他不被接受的行為。
+可以透過 ${email}，來聯繫專案團隊來報告濫用、騷擾或其他不被接受的行為。
 
 任何維護團隊認為有必要且適合的所有投訴都將進行審查及調查，並做出相對應的回應。專案小組有對事件回報者有保密的義務。具體執行的方針近一步細節可能會單獨公佈。
 
