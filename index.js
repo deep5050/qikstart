@@ -183,6 +183,13 @@ const ask = async () => {
             ]
         });
         config.set(coc);
+
+        const email = await qoa.input({
+            query: " Enter Email:",
+            handle: "email"
+        });
+        config.set(email);
+
     }
 
 
@@ -288,7 +295,7 @@ const analyze = async () => {
     if (config.has('coc') && config.get('if_coc') === true) {
         let lang_id = coc.get_code(config.get('coc'));
         await write_files(
-            ".", coc.get_coc(lang_id),
+            ".", coc.get_coc(lang_id,config.get('email')),
             "CODE_OF_CONDUCT", "md"
         );
     }
