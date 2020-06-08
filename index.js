@@ -17,6 +17,7 @@ const chalk = require('chalk');
 const symbols = require('log-symbols');
 
 const config = new Conf();
+
 //console.log(config.path);
 /*
 
@@ -294,10 +295,19 @@ const analyze = async () => {
 
     //-------- ISSUE TEMPLATE ---------------//
     if (config.get('issue_template') === true) {
+        if (!fs.existsSync('./.github/ISSUE_TEMPLATE')) {
+            fs.mkdirSync('./.github/ISSUE_TEMPLATE');
+        }
         await write_files(
-            ".",
-            issue.en(),
-            "ISSUE_TEMPLATE",
+            "./.github/ISSUE_TEMPLATE",
+            issue.bug(),
+            "bug_report",
+            "md"
+        );
+        await write_files(
+            "./.github/ISSUE_TEMPLATE",
+            issue.feature(),
+            "feature_request",
             "md"
         );
     }
@@ -332,8 +342,8 @@ const analyze = async () => {
             changelog.en(config.get('program')),
             "CHANGELOG",
             "md"
-        ).then(()=>{
-            
+        ).then(() => {
+
         });
     }
 
