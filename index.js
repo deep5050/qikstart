@@ -302,17 +302,19 @@ const analyze = async () => {
 
     //-------- ISSUE TEMPLATE ---------------//
     if (config.get('issue_template') === true) {
-        if (!fs.existsSync(path.join('.github','ISSUE_TEMPLATE'))) {
-            fs.mkdirSync(path.join('.github','ISSUE_TEMPLATE'));
+        if (!fs.existsSync(path.join(process.cwd(),'.github','ISSUE_TEMPLATE'))) {
+            fs.mkdirSync(path.join(process.cwd(),'.github','ISSUE_TEMPLATE') ,{recursive: true}, err => {
+                console.log(err);
+            });
         }
         await write_files(
-            path.join('.github','ISSUE_TEMPLATE'),
+            path.join(process.cwd(),'.github','ISSUE_TEMPLATE'),
             issue.bug(),
             "bug_report",
             "md"
         );
         await write_files(
-            path.join('.github','ISSUE_TEMPLATE'),
+            path.join(process.cwd(),'.github','ISSUE_TEMPLATE'),
             issue.feature(),
             "feature_request",
             "md"
