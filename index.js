@@ -302,17 +302,17 @@ const analyze = async () => {
 
     //-------- ISSUE TEMPLATE ---------------//
     if (config.get('issue_template') === true) {
-        if (!fs.existsSync(path.join(__dirname,'.github','ISSUE_TEMPLATE'))) {
-            fs.mkdirSync(path.join(__dirname,'.github','ISSUE_TEMPLATE'));
+        if (!fs.existsSync(path.join('.github','ISSUE_TEMPLATE'))) {
+            fs.mkdirSync(path.join('.github','ISSUE_TEMPLATE'));
         }
         await write_files(
-            path.join(__dirname,'.github','ISSUE_TEMPLATE'),
+            path.join('.github','ISSUE_TEMPLATE'),
             issue.bug(),
             "bug_report",
             "md"
         );
         await write_files(
-            path.join(__dirname,'.github','ISSUE_TEMPLATE'),
+            path.join('.github','ISSUE_TEMPLATE'),
             issue.feature(),
             "feature_request",
             "md"
