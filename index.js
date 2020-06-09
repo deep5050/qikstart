@@ -10,11 +10,11 @@ const contribute = require('./src/contribute');
 const changelog = require('./src/changelog');
 const badges = require('./src/badges');
 const fs = require('fs');
-const path = require('path');
 const qoa = require('qoa');
 const Conf = require('conf');
 const chalk = require('chalk');
 const symbols = require('log-symbols');
+const path = require('path');
 
 const config = new Conf();
 
@@ -302,17 +302,17 @@ const analyze = async () => {
 
     //-------- ISSUE TEMPLATE ---------------//
     if (config.get('issue_template') === true) {
-        if (!fs.existsSync('./.github/ISSUE_TEMPLATE')) {
-            fs.mkdirSync('./.github/ISSUE_TEMPLATE');
+        if (!fs.existsSync(path.join(__dirname,'.github','ISSUE_TEMPLATE'))) {
+            fs.mkdirSync(path.join(__dirname,'.github','ISSUE_TEMPLATE'));
         }
         await write_files(
-            "./.github/ISSUE_TEMPLATE",
+            path.join(__dirname,'.github','ISSUE_TEMPLATE'),
             issue.bug(),
             "bug_report",
             "md"
         );
         await write_files(
-            "./.github/ISSUE_TEMPLATE",
+            path.join(__dirname,'.github','ISSUE_TEMPLATE'),
             issue.feature(),
             "feature_request",
             "md"
