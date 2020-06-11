@@ -1,5 +1,5 @@
 module.exports.en = () => {
-  return `# Contributing Guidelines
+	return `# Contributing Guidelines
 
 Pull requests are the easiest way to contribute changes to git repos at Github.
 They are the preferred contribution method, as they offer a nice way for
@@ -17,4 +17,4 @@ commenting and amending the proposed changes.
 
 * If you need to change something in the existing pull request, you can use \`git push -f\` to overwrite the original commits. That is easy and safe when using a feature branch.
 `;
-}
+};

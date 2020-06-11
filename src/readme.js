@@ -1,5 +1,5 @@
-module.exports.en = (repo) => {
-    return `# ${repo}
+module.exports.en = repo => {
+	return `# ${repo}
 
 
 ## Getting Started
@@ -44,4 +44,4 @@ See the [LICENSE](LICENSE) file for more details.
 
 
 `;
-}
+};

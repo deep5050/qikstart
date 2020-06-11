@@ -1,5 +1,5 @@
 module.exports.bug = () => {
-  return `---
+	return `---
 name: Bug report
 about: Create a report to help us improve
 title: ''
@@ -39,10 +39,10 @@ If applicable, add screenshots to help explain your problem.
 Add any other context about the problem here.
 
 `;
-}
+};
 
-module.exports.feature=()=>{
-    return `---
+module.exports.feature = () => {
+	return `---
 name: Feature request
 about: Suggest an idea for this project
 title: ''
@@ -63,4 +63,4 @@ A clear and concise description of any alternative solutions or features you've 
 **Additional context**
 Add any other context or screenshots about the feature request here.
 `;
-}
+};

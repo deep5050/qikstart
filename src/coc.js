@@ -1,268 +1,263 @@
-module.exports.all_langs = ()=> {
-  return {
+module.exports.all_langs = () => {
+	return {
 
-    "aa": "Afar",
-    "ab": "Abkhazian",
-    "af": "Afrikaans",
-    "am": "Amharic",
-    "ar": "Arabic",
-    "ar_ae": "Arabic (U.A.E.)",
-    "ar_bh": "Arabic (Bahrain)",
-    "ar_dz": "Arabic (Algeria)",
-    "ar_eg": "Arabic (Egypt)",
-    "ar_iq": "Arabic (Iraq)",
-    "ar_jo": "Arabic (Jordan)",
-    "ar_kw": "Arabic (Kuwait)",
-    "ar_lb": "Arabic (Lebanon)",
-    "ar_ly": "Arabic (libya)",
-    "ar_ma": "Arabic (Morocco)",
-    "ar_om": "Arabic (Oman)",
-    "ar_qa": "Arabic (Qatar)",
-    "ar_sa": "Arabic (Saudi Arabia)",
-    "ar_sy": "Arabic (Syria)",
-    "ar_tn": "Arabic (Tunisia)",
-    "ar_ye": "Arabic (Yemen)",
-    "as": "Assamese",
-    "ay": "Aymara",
-    "az": "Azeri",
-    "ba": "Bashkir",
-    "be": "Belarusian",
-    "bg": "Bulgarian",
-    "bh": "Bihari",
-    "bi": "Bislama",
-    "bn": "Bengali",
-    "bo": "Tibetan",
-    "br": "Breton",
-    "bs": "Bosnian",
-    "ca": "Catalan",
-    "co": "Corsican",
-    "cs": "Czech",
-    "cy": "Welsh",
-    "da": "Danish",
-    "de": "German",
-    "de_at": "German (Austria)",
-    "de_ch": "German (Switzerland)",
-    "de_li": "German (Liechtenstein)",
-    "de_lu": "German (Luxembourg)",
-    "div": "Divehi",
-    "dz": "Bhutani",
-    "el": "Greek",
-    "en": "English",
-    "en_au": "English (Australia)",
-    "en_bz": "English (Belize)",
-    "en_ca": "English (Canada)",
-    "en_gb": "English (United Kingdom)",
-    "en_ie": "English (Ireland)",
-    "en_jm": "English (Jamaica)",
-    "en_nz": "English (New Zealand)",
-    "en_ph": "English (Philippines)",
-    "en_tt": "English (Trinidad)",
-    "en_us": "English (United States)",
-    "en_za": "English (South Africa)",
-    "en_zw": "English (Zimbabwe)",
-    "eo": "Esperanto",
-    "es": "Spanish",
-    "es_ar": "Spanish (Argentina)",
-    "es_bo": "Spanish (Bolivia)",
-    "es_cl": "Spanish (Chile)",
-    "es_co": "Spanish (Colombia)",
-    "es_cr": "Spanish (Costa Rica)",
-    "es_do": "Spanish (Dominican Republic)",
-    "es_ec": "Spanish (Ecuador)",
-    "es_es": "Spanish (España)",
-    "es_gt": "Spanish (Guatemala)",
-    "es_hn": "Spanish (Honduras)",
-    "es_mx": "Spanish (Mexico)",
-    "es_ni": "Spanish (Nicaragua)",
-    "es_pa": "Spanish (Panama)",
-    "es_pe": "Spanish (Peru)",
-    "es_pr": "Spanish (Puerto Rico)",
-    "es_py": "Spanish (Paraguay)",
-    "es_sv": "Spanish (El Salvador)",
-    "es_us": "Spanish (United States)",
-    "es_uy": "Spanish (Uruguay)",
-    "es_ve": "Spanish (Venezuela)",
-    "et": "Estonian",
-    "eu": "Basque",
-    "fa": "Farsi",
-    "fa_ir": "Farsi (Iran)",
-    "fi": "Finnish",
-    "fj": "Fiji",
-    "fo": "Faeroese",
-    "fr": "French",
-    "fr_be": "French (Belgium)",
-    "fr_ca": "French (Canada)",
-    "fr_ch": "French (Switzerland)",
-    "fr_lu": "French (Luxembourg)",
-    "fr_mc": "French (Monaco)",
-    "fy": "Frisian",
-    "ga": "Irish",
-    "gd": "Gaelic",
-    "gl": "Galician",
-    "gn": "Guarani",
-    "gu": "Gujarati",
-    "ha": "Hausa",
-    "he": "Hebrew",
-    "hi": "Hindi",
-    "hr": "Croatian",
-    "hu": "Hungarian",
-    "hy": "Armenian",
-    "ia": "Interlingua",
-    "id": "Indonesian",
-    "ie": "Interlingue",
-    "ik": "Inupiak",
-    "in": "Indonesian",
-    "is": "Icelandic",
-    "it": "Italian",
-    "it_ch": "Italian (Switzerland)",
-    "iw": "Hebrew",
-    "ja": "Japanese",
-    "ji": "Yiddish",
-    "jw": "Javanese",
-    "ka": "Georgian",
-    "kk": "Kazakh",
-    "kl": "Greenlandic",
-    "km": "Cambodian",
-    "kn": "Kannada",
-    "ko": "Korean",
-    "kok": "Konkani",
-    "ks": "Kashmiri",
-    "ku": "Kurdish",
-    "ky": "Kirghiz",
-    "kz": "Kyrgyz",
-    "la": "Latin",
-    "ln": "Lingala",
-    "lo": "Laothian",
-    "ls": "Slovenian",
-    "lt": "Lithuanian",
-    "lv": "Latvian",
-    "mg": "Malagasy",
-    "mi": "Maori",
-    "mk": "FYRO Macedonian",
-    "ml": "Malayalam",
-    "mn": "Mongolian",
-    "mo": "Moldavian",
-    "mr": "Marathi",
-    "ms": "Malay",
-    "mt": "Maltese",
-    "my": "Burmese",
-    "na": "Nauru",
-    "nb_no": "Norwegian (Bokmal)",
-    "ne": "Nepali (India)",
-    "nl": "Dutch",
-    "nl_be": "Dutch (Belgium)",
-    "nn_no": "Norwegian",
-    "no": "Norwegian (Bokmal)",
-    "oc": "Occitan",
-    "om": "(Afan)/Oromoor/Oriya",
-    "or": "Oriya",
-    "pa": "Punjabi",
-    "pl": "Polish",
-    "ps": "Pashto/Pushto",
-    "pt": "Portuguese",
-    "pt_br": "Portuguese (Brazil)",
-    "qu": "Quechua",
-    "rm": "Rhaeto_Romanic",
-    "rn": "Kirundi",
-    "ro": "Romanian",
-    "ro_md": "Romanian (Moldova)",
-    "ru": "Russian",
-    "ru_md": "Russian (Moldova)",
-    "rw": "Kinyarwanda",
-    "sa": "Sanskrit",
-    "sb": "Sorbian",
-    "sd": "Sindhi",
-    "sg": "Sangro",
-    "sh": "Serbo_Croatian",
-    "si": "Singhalese",
-    "sk": "Slovak",
-    "sl": "Slovenian",
-    "sm": "Samoan",
-    "sn": "Shona",
-    "so": "Somali",
-    "sq": "Albanian",
-    "sr": "Serbian",
-    "ss": "Siswati",
-    "st": "Sesotho",
-    "su": "Sundanese",
-    "sv": "Swedish",
-    "sv_fi": "Swedish (Finland)",
-    "sw": "Swahili",
-    "sx": "Sutu",
-    "syr": "Syriac",
-    "ta": "Tamil",
-    "te": "Telugu",
-    "tg": "Tajik",
-    "th": "Thai",
-    "ti": "Tigrinya",
-    "tk": "Turkmen",
-    "tl": "Tagalog",
-    "tn": "Tswana",
-    "to": "Tonga",
-    "tr": "Turkish",
-    "ts": "Tsonga",
-    "tt": "Tatar",
-    "tw": "Twi",
-    "uk": "Ukrainian",
-    "ur": "Urdu",
-    "uz": "Uzbek",
-    "vi": "Vietnamese",
-    "vo": "Volapuk",
-    "wo": "Wolof",
-    "xh": "Xhosa",
-    "yi": "Yiddish",
-    "yo": "Yoruba",
-    "zh": "Chinese",
-    "zh_cn": "Chinese (China)",
-    "zh_hk": "Chinese (Hong Kong SAR)",
-    "zh_mo": "Chinese (Macau SAR)",
-    "zh_sg": "Chinese (Singapore)",
-    "zh_tw": "Chinese (Taiwan)",
-    "zu": "Zulu"
-  }
+		aa: 'Afar',
+		ab: 'Abkhazian',
+		af: 'Afrikaans',
+		am: 'Amharic',
+		ar: 'Arabic',
+		ar_ae: 'Arabic (U.A.E.)',
+		ar_bh: 'Arabic (Bahrain)',
+		ar_dz: 'Arabic (Algeria)',
+		ar_eg: 'Arabic (Egypt)',
+		ar_iq: 'Arabic (Iraq)',
+		ar_jo: 'Arabic (Jordan)',
+		ar_kw: 'Arabic (Kuwait)',
+		ar_lb: 'Arabic (Lebanon)',
+		ar_ly: 'Arabic (libya)',
+		ar_ma: 'Arabic (Morocco)',
+		ar_om: 'Arabic (Oman)',
+		ar_qa: 'Arabic (Qatar)',
+		ar_sa: 'Arabic (Saudi Arabia)',
+		ar_sy: 'Arabic (Syria)',
+		ar_tn: 'Arabic (Tunisia)',
+		ar_ye: 'Arabic (Yemen)',
+		as: 'Assamese',
+		ay: 'Aymara',
+		az: 'Azeri',
+		ba: 'Bashkir',
+		be: 'Belarusian',
+		bg: 'Bulgarian',
+		bh: 'Bihari',
+		bi: 'Bislama',
+		bn: 'Bengali',
+		bo: 'Tibetan',
+		br: 'Breton',
+		bs: 'Bosnian',
+		ca: 'Catalan',
+		co: 'Corsican',
+		cs: 'Czech',
+		cy: 'Welsh',
+		da: 'Danish',
+		de: 'German',
+		de_at: 'German (Austria)',
+		de_ch: 'German (Switzerland)',
+		de_li: 'German (Liechtenstein)',
+		de_lu: 'German (Luxembourg)',
+		div: 'Divehi',
+		dz: 'Bhutani',
+		el: 'Greek',
+		en: 'English',
+		en_au: 'English (Australia)',
+		en_bz: 'English (Belize)',
+		en_ca: 'English (Canada)',
+		en_gb: 'English (United Kingdom)',
+		en_ie: 'English (Ireland)',
+		en_jm: 'English (Jamaica)',
+		en_nz: 'English (New Zealand)',
+		en_ph: 'English (Philippines)',
+		en_tt: 'English (Trinidad)',
+		en_us: 'English (United States)',
+		en_za: 'English (South Africa)',
+		en_zw: 'English (Zimbabwe)',
+		eo: 'Esperanto',
+		es: 'Spanish',
+		es_ar: 'Spanish (Argentina)',
+		es_bo: 'Spanish (Bolivia)',
+		es_cl: 'Spanish (Chile)',
+		es_co: 'Spanish (Colombia)',
+		es_cr: 'Spanish (Costa Rica)',
+		es_do: 'Spanish (Dominican Republic)',
+		es_ec: 'Spanish (Ecuador)',
+		es_es: 'Spanish (España)',
+		es_gt: 'Spanish (Guatemala)',
+		es_hn: 'Spanish (Honduras)',
+		es_mx: 'Spanish (Mexico)',
+		es_ni: 'Spanish (Nicaragua)',
+		es_pa: 'Spanish (Panama)',
+		es_pe: 'Spanish (Peru)',
+		es_pr: 'Spanish (Puerto Rico)',
+		es_py: 'Spanish (Paraguay)',
+		es_sv: 'Spanish (El Salvador)',
+		es_us: 'Spanish (United States)',
+		es_uy: 'Spanish (Uruguay)',
+		es_ve: 'Spanish (Venezuela)',
+		et: 'Estonian',
+		eu: 'Basque',
+		fa: 'Farsi',
+		fa_ir: 'Farsi (Iran)',
+		fi: 'Finnish',
+		fj: 'Fiji',
+		fo: 'Faeroese',
+		fr: 'French',
+		fr_be: 'French (Belgium)',
+		fr_ca: 'French (Canada)',
+		fr_ch: 'French (Switzerland)',
+		fr_lu: 'French (Luxembourg)',
+		fr_mc: 'French (Monaco)',
+		fy: 'Frisian',
+		ga: 'Irish',
+		gd: 'Gaelic',
+		gl: 'Galician',
+		gn: 'Guarani',
+		gu: 'Gujarati',
+		ha: 'Hausa',
+		he: 'Hebrew',
+		hi: 'Hindi',
+		hr: 'Croatian',
+		hu: 'Hungarian',
+		hy: 'Armenian',
+		ia: 'Interlingua',
+		id: 'Indonesian',
+		ie: 'Interlingue',
+		ik: 'Inupiak',
+		in: 'Indonesian',
+		is: 'Icelandic',
+		it: 'Italian',
+		it_ch: 'Italian (Switzerland)',
+		iw: 'Hebrew',
+		ja: 'Japanese',
+		ji: 'Yiddish',
+		jw: 'Javanese',
+		ka: 'Georgian',
+		kk: 'Kazakh',
+		kl: 'Greenlandic',
+		km: 'Cambodian',
+		kn: 'Kannada',
+		ko: 'Korean',
+		kok: 'Konkani',
+		ks: 'Kashmiri',
+		ku: 'Kurdish',
+		ky: 'Kirghiz',
+		kz: 'Kyrgyz',
+		la: 'Latin',
+		ln: 'Lingala',
+		lo: 'Laothian',
+		ls: 'Slovenian',
+		lt: 'Lithuanian',
+		lv: 'Latvian',
+		mg: 'Malagasy',
+		mi: 'Maori',
+		mk: 'FYRO Macedonian',
+		ml: 'Malayalam',
+		mn: 'Mongolian',
+		mo: 'Moldavian',
+		mr: 'Marathi',
+		ms: 'Malay',
+		mt: 'Maltese',
+		my: 'Burmese',
+		na: 'Nauru',
+		nb_no: 'Norwegian (Bokmal)',
+		ne: 'Nepali (India)',
+		nl: 'Dutch',
+		nl_be: 'Dutch (Belgium)',
+		nn_no: 'Norwegian',
+		no: 'Norwegian (Bokmal)',
+		oc: 'Occitan',
+		om: '(Afan)/Oromoor/Oriya',
+		or: 'Oriya',
+		pa: 'Punjabi',
+		pl: 'Polish',
+		ps: 'Pashto/Pushto',
+		pt: 'Portuguese',
+		pt_br: 'Portuguese (Brazil)',
+		qu: 'Quechua',
+		rm: 'Rhaeto_Romanic',
+		rn: 'Kirundi',
+		ro: 'Romanian',
+		ro_md: 'Romanian (Moldova)',
+		ru: 'Russian',
+		ru_md: 'Russian (Moldova)',
+		rw: 'Kinyarwanda',
+		sa: 'Sanskrit',
+		sb: 'Sorbian',
+		sd: 'Sindhi',
+		sg: 'Sangro',
+		sh: 'Serbo_Croatian',
+		si: 'Singhalese',
+		sk: 'Slovak',
+		sl: 'Slovenian',
+		sm: 'Samoan',
+		sn: 'Shona',
+		so: 'Somali',
+		sq: 'Albanian',
+		sr: 'Serbian',
+		ss: 'Siswati',
+		st: 'Sesotho',
+		su: 'Sundanese',
+		sv: 'Swedish',
+		sv_fi: 'Swedish (Finland)',
+		sw: 'Swahili',
+		sx: 'Sutu',
+		syr: 'Syriac',
+		ta: 'Tamil',
+		te: 'Telugu',
+		tg: 'Tajik',
+		th: 'Thai',
+		ti: 'Tigrinya',
+		tk: 'Turkmen',
+		tl: 'Tagalog',
+		tn: 'Tswana',
+		to: 'Tonga',
+		tr: 'Turkish',
+		ts: 'Tsonga',
+		tt: 'Tatar',
+		tw: 'Twi',
+		uk: 'Ukrainian',
+		ur: 'Urdu',
+		uz: 'Uzbek',
+		vi: 'Vietnamese',
+		vo: 'Volapuk',
+		wo: 'Wolof',
+		xh: 'Xhosa',
+		yi: 'Yiddish',
+		yo: 'Yoruba',
+		zh: 'Chinese',
+		zh_cn: 'Chinese (China)',
+		zh_hk: 'Chinese (Hong Kong SAR)',
+		zh_mo: 'Chinese (Macau SAR)',
+		zh_sg: 'Chinese (Singapore)',
+		zh_tw: 'Chinese (Taiwan)',
+		zu: 'Zulu'
+	};
+};
 
-}
+module.exports.supported_langs = () => {
+	return ['bn', 'bs', 'de', 'el', 'en', 'es', 'fa_ir', 'fr', 'hi', 'id', 'is', 'iw', 'ja', 'kn', 'ko', 'mk', 'nl', 'pl', 'pt_br', 'pt', 'ro', 'ru', 'sl', 'sv', 'tr', 'uk', 'zh_cn', 'zh_tw'];
+};
 
+module.exports.get_code = user_lang => {
+	langs = this.all_langs();
+	let name = '';
+	let to_return = '';
+	Object.keys(langs).forEach(key => {
+		name = langs[key];
 
+		if (name.toString().trim() === user_lang) {
+			to_return = key;
+		}
+	});
+	return to_return;
+};
 
-module.exports.supported_langs = ()=> {
-  return ['bn', 'bs', 'de', 'el', 'en', 'es', 'fa_ir', 'fr', 'hi', 'id', 'is', 'iw', 'ja', 'kn', 'ko', 'mk', 'nl', 'pl', 'pt_br', 'pt', 'ro', 'ru', 'sl', 'sv', 'tr', 'uk', 'zh_cn', 'zh_tw'];
-}
+module.exports.get_lang = code => {
+	langs = this.all_langs();
+	const name = '';
+	let to_return = '';
+	Object.keys(langs).forEach(key => {
+		if (key.toString().trim() === code) {
+			to_return = langs[key];
+		}
+	});
+	return to_return;
+};
 
+module.exports.get_coc = (id, email) => {
+	return this[id](email);
+};
 
-module.exports.get_code = (user_lang) => {
-  langs = this.all_langs();
-  var name = "";
-  var to_return = "";
-  Object.keys(langs).forEach(function (key) {
-    name = langs[key];
-
-    if (name.toString().trim() === user_lang) {
-      to_return = key;
-    }
-  });
-  return to_return;
-}
-
-module.exports.get_lang = (code) => {
-  langs = this.all_langs();
-  var name = "";
-  var to_return = "";
-  Object.keys(langs).forEach(function (key) {
-
-    if (key.toString().trim() === code) {
-      to_return = langs[key];
-    }
-  });
-  return to_return;
-}
-
-module.exports.get_coc = (id,email) => {
-  return this[id](email);
-}
-
-module.exports.bn = (email)=> {
-  return `# কনট্রিবিউটরদের আচরনবিধি
+module.exports.bn = email => {
+	return `# কনট্রিবিউটরদের আচরনবিধি
 
 ## আমাদের অঙ্গীকার
 
@@ -331,12 +326,10 @@ module.exports.bn = (email)=> {
 এখানে পাওয়া যাবে https://www.contributor-covenant.org/bn/version/1/4/code-of-conduct.html
 
 [homepage]: https://www.contributor-covenant.org`;
-}
+};
 
-
-
-module.exports.bs = (email)=> {
-  return `# Pakt Saradnika: Kodeks Ponašanja
+module.exports.bs = email => {
+	return `# Pakt Saradnika: Kodeks Ponašanja
 
 ## Naš zalog
 
@@ -382,10 +375,10 @@ Održavatelji projekta koji ne prate ili primijene ovaj kodeks ponašanja mogu b
 
 Ovaj kodeks ponašanja je preuzet iz [Contributor Covenant](https://www.contributor-covenant.org), verzija 1.4, dostupan na https://www.contributor-covenant.org/bs/version/1/4/code-of-conduct.html
 `;
-}
+};
 
-module.exports.de = (email)=> {
-  return `# Vereinbarung über Verhaltenskodex für Mitwirkende
+module.exports.de = email => {
+	return `# Vereinbarung über Verhaltenskodex für Mitwirkende
 
 ## Unsere Verpflichtung
 
@@ -429,10 +422,10 @@ Projektverantwortliche, welche den Verhaltenskodex nicht befolgen, oder nicht na
 
 Dieser Verhaltenskodex basiert auf dem Contributor Covenant, Version 1.4, verfügbar unter https://www.contributor-covenant.org/de/version/1/4/code-of-conduct.html
 `;
-}
+};
 
-module.exports.el = (email)=> {
-  return `# Κώδικας δεοντολογίας «Contributor Covenant»
+module.exports.el = email => {
+	return `# Κώδικας δεοντολογίας «Contributor Covenant»
 
 ## Η υπόσχεσή μας
 
@@ -507,12 +500,10 @@ ${email}.  Όλα τα παράπονα θα εξετάζονται και θα 
 
 [οικοσελίδα]: https://www.contributor-covenant.org
 `;
-}
+};
 
-
-
-module.exports.en = (email)=> {
-  return `# Contributor Covenant Code of Conduct
+module.exports.en = email => {
+	return `# Contributor Covenant Code of Conduct
 
 ## Our Pledge
 
@@ -587,11 +578,10 @@ available at [https://contributor-covenant.org/version/1/4][version]
 [homepage]: https://contributor-covenant.org
 [version]: https://contributor-covenant.org/version/1/4/
 `;
-}
+};
 
-
-module.exports.es = (email)=> {
-  return `# Código de Conducta convenido para Contribuyentes
+module.exports.es = email => {
+	return `# Código de Conducta convenido para Contribuyentes
 
 ## Nuestro compromiso
 
@@ -637,10 +627,10 @@ Este Código de Conducta es una adaptación del [Contributor Covenant][homepage]
 
 [homepage]: https://www.contributor-covenant.org
 `;
-}
+};
 
-module.exports.fa_ir = (email)=> {
-  return `# پیمان نهوه ی برخورد با مشارکت کننده
+module.exports.fa_ir = email => {
+	return `# پیمان نهوه ی برخورد با مشارکت کننده
 
 ## تعهد ما
 
@@ -701,10 +691,10 @@ https://www.contributor-covenant.org/version/1/4/code-of-conduct.html در دس�
 برداشته شده است.
 [صفحه نخست]: https://www.contributor-covenant.org
 `;
-}
+};
 
-module.exports.fr = (email)=> {
-  return `# Charte Code de Conduite Contributeurs
+module.exports.fr = email => {
+	return `# Charte Code de Conduite Contributeurs
 
 ## Notre engagement
 
@@ -781,10 +771,10 @@ Ce Code de Conduite est adapté du [Contributor Covenant](https://www.contributo
 version 1.4.0, disponible à
 <https://www.contributor-covenant.org/fr/version/1/4/code-of-conduct>
 `;
-}
+};
 
-module.exports.hi = (email)=> {
-  return `# योगदानकर्ता नियमों की आचार संहिता
+module.exports.hi = email => {
+	return `# योगदानकर्ता नियमों की आचार संहिता
 
 ## हमारी प्रतिज्ञा
 
@@ -830,10 +820,10 @@ module.exports.hi = (email)=> {
 
 [मुखपृष्ठ]: https://www.contributor-covenant.org
 `;
-}
+};
 
-module.exports.id = (email)=> {
-  return `# Kode Etik Contributor Covenant
+module.exports.id = email => {
+	return `# Kode Etik Contributor Covenant
 
 ## Ikrar Kami
 
@@ -894,10 +884,10 @@ tersedia di [https://www.contributor-covenant.org/version/1/4/code-of-conduct.ht
 [homepage]: https://www.contributor-covenant.org
 [version]: https://contributor-covenant.org/version/1/4/
 `;
-}
+};
 
-module.exports.is = (email)=> {
-  return `# Hátternisreglur þátttakenda
+module.exports.is = email => {
+	return `# Hátternisreglur þátttakenda
 
 ## Loforð okkar
 
@@ -971,10 +961,10 @@ https://www.contributor-covenant.org/version/1/4/code-of-conduct/
 
 [homepage]: https://www.contributor-covenant.org
 `;
-}
+};
 
-module.exports.iw = (email)=> {
-  return `# קוד התנהגות לתורם
+module.exports.iw = email => {
+	return `# קוד התנהגות לתורם
 
 ## ההתחייבות שלנו
 
@@ -1035,10 +1025,10 @@ module.exports.iw = (email)=> {
 
 [homepage]: https://www.contributor-covenant.org
 `;
-}
+};
 
-module.exports.ja = (email)=> {
-  return `# コントリビューター行動規範
+module.exports.ja = email => {
+	return `# コントリビューター行動規範
 
 ## 私たちの約束
 
@@ -1109,10 +1099,10 @@ https://www.contributor-covenant.org/version/1/4/code-of-conduct.html にある
 
 [homepage]: https://www.contributor-covenant.org
 `;
-}
+};
 
-module.exports.kn = (email)=> {
-  return `# ಕೊಡುಗೆದಾರರ ಒಪ್ಪಂದದ ನೀತಿ
+module.exports.kn = email => {
+	return `# ಕೊಡುಗೆದಾರರ ಒಪ್ಪಂದದ ನೀತಿ
 
 ## ನಮ್ಮ ಪ್ರತಿಜ್ಞೆ
 
@@ -1160,10 +1150,10 @@ module.exports.kn = (email)=> {
 
 [ಮುಖಪುಟ]: https://www.contributor-covenant.org
 `;
-}
+};
 
-module.exports.ko = (email)=> {
-  return `# 기여자 행동 강령 규약
+module.exports.ko = email => {
+	return `# 기여자 행동 강령 규약
 
 ## 서약
 
@@ -1226,10 +1216,10 @@ https://www.contributor-covenant.org/ko/version/1/4/code-of-conduct.html 에서
 
 [homepage]: https://www.contributor-covenant.org
 `;
-}
+};
 
-module.exports.mk = (email)=> {
-  return `# Договор за Соработник - Kодекс на Oднесување
+module.exports.mk = email => {
+	return `# Договор за Соработник - Kодекс на Oднесување
 
 ## Нашиот завет
 
@@ -1276,10 +1266,10 @@ module.exports.mk = (email)=> {
 
 [homepage]: https://www.contributor-covenant.org
 `;
-}
+};
 
-module.exports.nl = (email)=> {
-  return `# Gedragscode voor Bijdragers
+module.exports.nl = email => {
+	return `# Gedragscode voor Bijdragers
 
 ## Onze belofte
 
@@ -1352,10 +1342,10 @@ versie 1.4, beschikbaar op https://www.contributor-covenant.org/nl/version/1/4/c
 
 [homepage]: https://www.contributor-covenant.org
 `;
-}
+};
 
-module.exports.pl = (email)=> {
-  return `# Przymierze Współpracy — Kodeks Postępowania
+module.exports.pl = email => {
+	return `# Przymierze Współpracy — Kodeks Postępowania
 
 ## Nasza Przysięga
 
@@ -1433,10 +1423,10 @@ wersji 1.4, dostępnej pod adresem https://www.contributor-covenant.org/version/
 
 [homepage]: https://www.contributor-covenant.org/
 `;
-}
+};
 
-module.exports.pt_br = (email)=> {
-  return `# Código de Conduta para Colaboradores
+module.exports.pt_br = email => {
+	return `# Código de Conduta para Colaboradores
 
 ## Nossa promessa
 
@@ -1506,10 +1496,10 @@ determinadas por outros membros da liderança do projeto.
 
 Este Código de Conduta é adaptado do [Contributor Covenant](https://www.contributor-covenant.org),
 versão 1.4, disponível em https://www.contributor-covenant.org/pt-br/version/1/4/code-of-conduct.html`;
-}
+};
 
-module.exports.pt = (email)=> {
-  return `# Pacto de Código de Conduta para Colaboradores
+module.exports.pt = email => {
+	return `# Pacto de Código de Conduta para Colaboradores
 
 ## O nosso comprometimento
 
@@ -1584,10 +1574,10 @@ ou permanentes determinadas por outros membros da liderança do projeto.
 
 Este Código de Conduta é adaptado do [Contributor Covenant](https://www.contributor-covenant.org),
 versão 1.4, disponível em https://www.contributor-covenant.org/pt/version/1/4/code-of-conduct.html`;
-}
+};
 
-module.exports.ro = (email)=> {
-  return `# Codul de Conduită al Contribuitorului
+module.exports.ro = email => {
+	return `# Codul de Conduită al Contribuitorului
 
 ## Angajamentul nostru 
 
@@ -1658,10 +1648,10 @@ Acest Cod de Conduită este adaptat conform [Codului de Conduită al Contribuito
 
 [homepage]: https://www.contributor-covenant.org
 `;
-}
+};
 
-module.exports.ru = (email)=> {
-  return `# Кодекс Поведения участника
+module.exports.ru = email => {
+	return `# Кодекс Поведения участника
 
 ## Обязательства
 
@@ -1705,10 +1695,10 @@ module.exports.ru = (email)=> {
 
 [сайт]: https://www.contributor-covenant.org
 `;
-}
+};
 
-module.exports.sl = (email)=> {
-  return `# Kodeks obnašanja zveze sodelavcev
+module.exports.sl = email => {
+	return `# Kodeks obnašanja zveze sodelavcev
 
 ## Naša zaobljuba
 
@@ -1781,10 +1771,10 @@ ki je na voljo na https://www.contributor-covenant.org/sl/version/1/4/code-of-co
 
 [homepage]: https://www.contributor-covenant.org
 `;
-}
+};
 
-module.exports.sv = (email)=> {
-  return `# Medarbetarförbundets Uppförandekod
+module.exports.sv = email => {
+	return `# Medarbetarförbundets Uppförandekod
 
 ## Vårt löfte
 
@@ -1859,10 +1849,10 @@ version 1.4, tillgänglig på https://www.contributor-covenant.org/sv/version/1/
 
 [hemsida]: https://www.contributor-covenant.org
 `;
-}
+};
 
-module.exports.tr = (email)=> {
-  return `# Katkıcı Ahdi Topluluk Sözleşmesi
+module.exports.tr = email => {
+	return `# Katkıcı Ahdi Topluluk Sözleşmesi
 
 ## Teminatımız
 
@@ -1931,10 +1921,10 @@ aslına bu adresten erişebilirsiniz https://www.contributor-covenant.org/tr/ver
 
 [homepage]: https://www.contributor-covenant.org
 `;
-}
+};
 
-module.exports.uk = (email)=> {
-  return `# Пакт про участь - Кодекс поведінки
+module.exports.uk = email => {
+	return `# Пакт про участь - Кодекс поведінки
 
 ## Наші зобовʼязання
 
@@ -2007,10 +1997,10 @@ module.exports.uk = (email)=> {
 
 [homepage]: https://www.contributor-covenant.org
 `;
-}
+};
 
-module.exports.zh_cn = (email)=> {
-  return `# 参与者公约
+module.exports.zh_cn = email => {
+	return `# 参与者公约
 
 ## 我们的保证
 
@@ -2063,10 +2053,10 @@ module.exports.zh_cn = (email)=> {
 
 [主页]: https://www.contributor-covenant.org
 `;
-}
+};
 
-module.exports.zh_tw = (email)=> {
-  return `# 貢獻者公約
+module.exports.zh_tw = email => {
+	return `# 貢獻者公約
 
 ## 我們的承諾
 
@@ -2119,4 +2109,4 @@ module.exports.zh_tw = (email)=> {
 
 [首頁]: https://www.contributor-covenant.org
 `;
-}
+};

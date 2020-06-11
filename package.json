@@ -52,5 +52,8 @@
     "log-symbols": "^4.0.0",
     "nonsense-license": "^1.0.2",
     "qoa": "^0.2.0"
+  },
+  "devDependencies": {
+    "xo": "^0.32.0"
   }
 }
